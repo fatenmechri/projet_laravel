@@ -1,0 +1,165 @@
+/* hal nejma t3oud 3al body lkol kich t7ebbou na7et kol chay y9ala9ni  */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* svh hia screen view heigt toul el ecrant ma8ir mathabet li 9ademek bark 3meltha bech mato93odch thabbet wela yabda espace bedha zeyda mellota*/
+.container{
+    width: 100%;
+    height: 100;
+    display: flex;
+    overflow: hidden;
+}
+
+/* flex nadhem bih positions mta3 div  */
+.login_div{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+/* background-repeat: no-repeat; ki ta3mel background taswira ma8irha todhhorlek m3awda 
+    background-size: cover; bech t8attilek el div lkol etaswira => mele5er bech ta3mel taswira backgroun hadhom lezmin*/
+.image_div{
+    width:40%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-image: url("417498098_353696870896209_6113139237241162119_n.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 0 100px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.logIn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 7attet position absolute bech matjinich fel west ma3a el div mta3 el log */
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #dbbcb4;
+    font-size: xx-large;
+}
+
+.linkSignUp{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    font-size: medium;
+    color: #696969;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.email{
+    width: 100%;
+    height: 40px;
+    border:2px solid #eeee;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.password{
+    width: 100%;
+    height: 40px;
+    border:2px solid #eeee;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.log_button{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    background-color:#dbbcb4 ;
+    margin-bottom: 40px;
+}
+
+.forgot{
+    font-size: small;
+    color: #2a2929;
+}
+
+.emailLab{
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 6px;
+    font-size: bold;
+    color: #dbbcb4;
+}
+
+.passLab{
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 6px;
+    font-size: bold;
+    color: #dbbcb4;
+}
+
+.image_p{
+    color: #872b20;
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* @media only screen and (max-width: 768px) ya3ni ki tabda el ecrant mta3ek a9al men 768px 
+yesta3mleha bech kol mates8ar el ecrant el site tabda mregla yetsamma responsive design 
+9otelha ki tabda el ecrant a9al men 768px na7i el taswira (display: none;) wou 5alli el login 3al page lkol(width: 100%;)  */
+@media only screen and (max-width: 768px) {
+    .image_div{
+        display: none;
+        
+    }
+    .login_div{
+        width: 100%;
+    }
+}
+
+/* nafs echay ki bekri ama l'ecrant 320 mta3 telephone */
+@media only screen and (max-width: 320px) {
+    .title{
+        font-size: x-large;
+        text-align: center;
+    }
+    .linkSignUp{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .title{
+        text-align: center;
+    }
+}
