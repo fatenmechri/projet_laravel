@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="paje3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+
+.header {
+  background-color: #9c5f36;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #e7c67e;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #e4deab;
+}
+
+.aside {
+  background-color: #df944e;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #695833;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><center>SERVICE issat  </center></h1>
+  <img src="images.jpg" alt="issat mahdia " width="100" height="80">
+
+  
+</div>
+<nav>
+  <ul>
+
+    <header>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li> <li><a href="/aide">Aide</a></li>
+      <li><a href="/panier">Panier</a></li>
+      <form action="/rechercher" method="get">
+          <input type="text" name="q" placeholder="Rechercher...">
+          <button type="submit">Rechercher</button>
+      </form>
+      
+      <!-- Autres éléments de l'en-tête -->
+  </header>
+      
+    
+  
+    
+  </ul>
+</nav>
+
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li> <a href="paj1.html">service de vente et location </a>  </li>
+      <li> <a href="page2.html">Service de Projet </a>  </li>
+      <li><a href="paje4.html">service de formation</a> </li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>Le service demandé </h1>
+    <p>Bienvenue sur SERVICE Issat_Mahdia, votre destination ultime pour toutes vos transactions d'achat, de vente, de location et de formation certifiée en ligne. Chez nous, explorez un monde de possibilités où chaque besoin trouve sa solution, chaque passion son objet, et chaque profession son outil.
+    </p>
+    <p>Découvrez une plateforme unique, conçue pour simplifier votre expérience d'achat en ligne. Avec une gamme incomparable de produits et des prix compétitifs, nous sommes fiers de vous offrir une sélection variée qui répond à tous vos besoins, le tout depuis le confort de votre foyer.</p>
+    <p>Que vous cherchiez des articles de qualité au meilleur prix, ou que vous souhaitiez vous former dans un domaine spécifique, Issat Mark est là pour vous accompagner à chaque étape. Parcourez notre catalogue diversifié, louez ou achetez des équipements de formation en ligne, et commencez dès aujourd'hui votre aventure de shopping sécurisé et satisfaisant.
+    </p>
+    <p>Rejoignez-nous sur Issat Mark, où chaque achat est une opportunité de découvrir, d'apprendre et de grandir. Faites de votre expérience en ligne une réussite, avec notre engagement à vous offrir la meilleure qualité de service et les meilleurs produits. Merci de choisir Issat Mark pour vos besoins d'e-commerce.</p>
+    <canvas id="myChart" width="400" height="200"></canvas>
+
+      
+        
+    </script>
+  </div>
+  <img src="Promotion-Planning-in-Inventory-Management.png" alt="promtion dere tout de lanne " width="200" height="160">
+  <img src="block-home-discount.jpg" alt="promtion dere tout de lanne " width="200" height="160">
+  <img src=" PROMO-MOBILE.png " alt="promtion dere tout de lanne " width="200" height="160">
+  <img src="Oscilloscope_400x400.webp" alt="promtion dere tout de lanne " width="200" height="160">
+  
+
+  
+
+  <div class="col-15 col-s-12">
+    <div class="aside">
+      <p> notre sites est 24 heures sur 24, 7 jours sur 7 ,Les clients peuvent faire leurs achats depuis n'importe où et à n'importe quel moment avec Large choix de produits</p>
+      <p></p>
+      <p> des offres spéciales, des réductions et des ventes flash qui ne sont pas disponibles en magasin.
+      </p>
+      <p></p>
+      <h2></h2>
+      
+       <p> suivi des vos depenses</p>  
+       <p>automatisation  de site</p> 
+       <p>telechargement autpmatique des opration bancaire</p>
+       <p>envoi les illimont factures  </p>  
+       <p>sit ofre de serifca de formation </p>  
+        
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="footer">
+  <p>Toutes les transactions rentables sont automatiquement ajoutées au compte de la issat</p>
+ 
+  
+  <footer class="footer mt-auto py-3 bg-light"style="text-align: center">
+    <div class="container"style="max-width: 800px;">
+        <span class="text-muted">© 2024 MaFormation</span>
+        <a>issat Mahdia</a>
+        <a>Tél1 : +216 73 687 190 - Tél2 : +216 73 687 510</a>
+         
+        <a>issatmh@issatmh.rnu.tn</a></samp>
+    </div>
+</footer>
+
+</div>
+
+</body>
+</html>
